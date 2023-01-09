@@ -30,4 +30,4 @@ top_speed = sorted(lista1)
 top_spatiu = sorted (lista2)
 
 
-print (f"cele mai rapide masini sunt --> " , top_speed[0] , "si -->" , top_speed[1])
+print (f"cele mai rapide masini  sunt --> " , top_speed[0] , "si -->" , top_speed[1])
