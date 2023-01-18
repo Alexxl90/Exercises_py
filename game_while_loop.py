@@ -1,27 +1,28 @@
-user_input = input('Press - help -  to start the program \n> ')
-while user_input != 'help' and user_input != 'HELP':
-    print ('Incorect input, please try again')
-    user_input = input('Press - help -  to start the program \n> ')
+print ('Type -help-')
 
+user_input = ''
 while True:
-
-    print ('start - to start the car \nstop - to stop the car \nquit - to exit')
-    game_options = input('> ')    
-
-    if game_options == 'start':
-        print ('Car started... Ready to go!')
-
-    elif game_options == 'stop':
-        print ('Car stopped.')
-        
-    elif game_options == 'quit':
-        exit()
-
+    user_input = input ('> ').lower()     
+    
+    if user_input == 'start':
+          print ('Car started... Ready to go!')
+    elif user_input == 'stop':
+        print ('Car stoped ..')
+    elif user_input == 'help':
+        print ('''Your options are:
+start - To start the car
+stop - To stop the car
+quit - To quit game
+help - Main menu
+        ''')
+    elif user_input == 'quit':
+        break
     else:
-        print('invalid')
-
-
-
+        print ('''I don't understand, please retype
+You options are:
+start - To start the car
+stop - To stop the car
+quit - To quit game''')    
 
 
 
