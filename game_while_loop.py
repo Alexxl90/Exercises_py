@@ -1,13 +1,23 @@
 print ('Type -help-')
+started = False
 
 user_input = ''
 while True:
     user_input = input ('> ').lower()     
     
     if user_input == 'start':
-          print ('Car started... Ready to go!')
+        if started:
+            print ('The car is already started')
+        else:
+            started = True
+
+            print ('Car started... Ready to go!')
     elif user_input == 'stop':
-        print ('Car stoped ..')
+        if not started:
+            print ('The car is already stoped') 
+        else:
+            started = False ### am nevioe de ceva lamuriri pe aici
+            print ('Car stoped ..')
     elif user_input == 'help':
         print ('''Your options are:
 start - To start the car
